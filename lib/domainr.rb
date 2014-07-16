@@ -1,8 +1,6 @@
 require 'hashie'
 require 'httparty'
 
-require 'domainr/version'
-
 module Domainr
   extend self
 

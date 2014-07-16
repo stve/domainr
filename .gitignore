@@ -1,21 +1,40 @@
-## MAC OS
-.DS_Store
-
-## TEXTMATE
+*.gem
+*.rbc
+*.sw[a-p]
 *.tmproj
-tmtags
-
-## EMACS
+*.tmproject
+*.un~
 *~
-\#*
-.\#*
-
-## VIM
-*.swp
-
-## PROJECT::GENERAL
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+.bundle
+.config
+.directory
+.elc
+.emacs.desktop
+.emacs.desktop.lock
+.redcar
+.yardoc
+Desktop.ini
+Gemfile.lock
+Icon?
+InstalledFiles
+Session.vim
+Thumbs.db
+\#*\#
+_yardoc
+auto-save-list
 coverage
-rdoc
+doc
+lib/bundler/man
 pkg
-
-## PROJECT::SPECIFIC
+pkg/*
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+tmtags
+tramp
