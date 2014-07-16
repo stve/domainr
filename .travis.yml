@@ -1,7 +1,12 @@
+bundler_args: --without development
+cache: bundler
+language: ruby
 rvm:
   - 1.9.3
   - 2.0
   - 2.1
-  - jruby
-  - rbx
+  - rbx-2
   - ruby-head
+matrix:
+  allow_failures:
+    - rvm: ruby-head
