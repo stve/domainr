@@ -1,6 +1,6 @@
 h1. domainr
 
-Ruby wrapper for the "Domainr API":http://domai.nr/api.
+Ruby wrapper for the "Domainr API":https://domainr.com/api.
 
 h2. Installation
 
@@ -17,7 +17,7 @@ You can also search Domainr based on a search term:
 <pre><code>Domainr.search('twitter')</code></pre>
 
 h2. Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
