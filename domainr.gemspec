@@ -6,7 +6,7 @@ require 'domainr/version'
 Gem::Specification.new do |spec|
   spec.name          = 'domainr'
   spec.version       = Domainr::VERSION
-  spec.homepage      = 'https://github.com/spagalloco/domainr'
+  spec.homepage      = 'https://github.com/stve/domainr'
 
   spec.author        = "Steve Agalloco"
   spec.email         = 'steve.agalloco@gmail.com'
