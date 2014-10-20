@@ -1,6 +1,6 @@
 # domainr
 
-Ruby wrapper for the [Domainr API](http://domai.nr/api).
+Ruby wrapper for the [Domainr API](http://domainr.com/api).
 
 ## Installation
 

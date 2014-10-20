@@ -6,7 +6,7 @@ module Domainr
 
   include HTTParty
   format :json
-  base_uri 'domai.nr'
+  base_uri 'domainr.com'
 
   def search(term)
     options = { :q => term, :client_id => 'ruby_spagalloco' }
