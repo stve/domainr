@@ -1,5 +1,20 @@
 RSpec.describe Domainr do
 
+  describe '#client_id=' do
+    after do
+      Domainr.client_id = nil
+    end
+
+    it 'returns "domainr_rubygem" by default' do
+      expect(Domainr.client_id).to eq('domainr_rubygem')
+    end
+
+    it 'allows a client_id to be defined' do
+      Domainr.client_id = 'domainr_test_suite'
+      expect(Domainr.client_id).to eq('domainr_test_suite')
+    end
+  end
+
   describe '#search' do
     context "with a search term" do
       subject { Domainr.search('domainr') }
