@@ -6,7 +6,7 @@ module Domainr
 
   include HTTParty
   format :json
-  base_uri 'domainr.com'
+  base_uri 'api.domainr.com'
 
   def self.client_id=(id)
     @client_id = id
@@ -18,12 +18,12 @@ module Domainr
 
   def search(term)
     options = { :q => term, :client_id => client_id }
-    Hashie::Mash.new(get('/api/json/search', { :query => options }))
+    Hashie::Mash.new(get('/v1/search', { :query => options }))
   end
 
   def info(domain)
     options = { :q => domain, :client_id => client_id }
-    Hashie::Mash.new(get('/api/json/info', { :query => options }))
+    Hashie::Mash.new(get('/v1/info', { :query => options }))
   end
 
 end
