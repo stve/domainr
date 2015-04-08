@@ -6,7 +6,7 @@ module Domainr
 
   include HTTParty
   format :json
-  base_uri 'api.domainr.com'
+  base_uri 'https://api.domainr.com'
 
   def self.client_id=(id)
     @client_id = id
