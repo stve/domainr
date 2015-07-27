@@ -13,7 +13,7 @@ module Domainr
   end
 
   def self.client_id
-    @client_id || 'domainr_rubygem'
+    @client_id || '{your-mashape-key}'
   end
 
   def search(term)
