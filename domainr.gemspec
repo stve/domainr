@@ -4,25 +4,18 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'domainr/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'domainr'
-  spec.version       = Domainr::VERSION
-  spec.homepage      = 'https://github.com/stve/domainr'
-
+  spec.add_dependency 'httparty', ">= 0.5.2"
+  spec.add_dependency 'hashie', ">= 0.2.0"
+  spec.add_development_dependency 'bundler', '~> 1.0'
   spec.author        = "Steve Agalloco"
-  spec.email         = 'steve.agalloco@gmail.com'
   spec.description   = 'Ruby wrapper for the Domainr API'
-  spec.summary       = 'Ruby wrapper for the Domainr API'
-
+  spec.email         = 'steve.agalloco@gmail.com'
+  spec.files         = %w(LICENSE.md README.md domainr.gemspec) + Dir['lib/**/*.rb']
+  spec.homepage      = 'https://github.com/stve/domainr'
   spec.licenses      = ['MIT']
-
-  spec.executables   = Dir.glob("bin/**/*")
-  spec.files         = %w(.yardopts LICENSE.md README.md Rakefile domainr.gemspec)
-  spec.files         += Dir.glob("lib/**/*.rb")
-  spec.files         += Dir.glob("spec/**/*")
-  spec.test_files    = Dir.glob("spec/**/*")
-
-  spec.add_dependency(%q<httparty>, [">= 0.5.2"])
-  spec.add_dependency(%q<hashie>, [">= 0.2.0"])
-
+  spec.name          = 'domainr'
   spec.require_paths = ['lib']
+  spec.required_ruby_version = '>= 2.0.0'
+  spec.summary       = 'Domainr API Ruby Client'
+  spec.version       = Domainr::VERSION
 end
