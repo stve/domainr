@@ -1,10 +1,1 @@
-HTTP/1.1 200 OK
-Content-Type: text/javascript+json
-Date: Wed, 07 Jul 2010 03:36:37 GMT
-Server: Google Frontend
-Cache-Control: private, x-gzip-ok=""
-X-Xss-Protection: 0
-Transfer-Encoding: Identity
-Connection: close
-
 {"query": "d", "error": {"status": 404, "message": "No results found."}}

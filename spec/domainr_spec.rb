@@ -17,6 +17,11 @@ RSpec.describe Domainr do
 
   describe '#search' do
     context "with a search term" do
+      before do
+        stub_request(:get, "https://api.domainr.com/v1/search?client_id=domainr_rubygem&q=domainr").
+          to_return(:status => 200, :body => fixture('search.json'), :headers => {})
+      end
+
       subject { Domainr.search('domainr') }
 
       it "includes the query term" do
@@ -37,6 +42,11 @@ RSpec.describe Domainr do
     end
 
     context "without a search term" do
+      before do
+        stub_request(:get, "https://api.domainr.com/v1/search?client_id=domainr_rubygem&q=").
+          to_return(:status => 200, :body => fixture('empty_search.json'), :headers => {})
+      end
+
       subject { Domainr.search(nil) }
 
       it "returns an error" do
@@ -50,6 +60,11 @@ RSpec.describe Domainr do
 
   context "Retrieving info from Domainr" do
     context "with a valid search term"do
+      before do
+        stub_request(:get, "https://api.domainr.com/v1/info?client_id=domainr_rubygem&q=domai.nr").
+          to_return(:status => 200, :body => fixture('info.json'), :headers => {})
+      end
+
       subject { Domainr.info('domai.nr') }
 
       it "return results" do
@@ -61,6 +76,11 @@ RSpec.describe Domainr do
     end
 
     context "with an invalid search term" do
+      before do
+        stub_request(:get, "https://api.domainr.com/v1/info?client_id=domainr_rubygem&q=d").
+          to_return(:status => 200, :body => fixture('empty_info.json'), :headers => {})
+      end
+
       subject { Domainr.info('d') }
 
       it "returns an error" do
