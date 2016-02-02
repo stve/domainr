@@ -17,13 +17,12 @@ module Domainr
   end
 
   def search(term)
-    options = { :q => term, :client_id => client_id }
-    Hashie::Mash.new(get('/v1/search', { :query => options }))
+    options = {q: term, client_id: client_id}
+    Hashie::Mash.new(get('/v1/search', query: options))
   end
 
   def info(domain)
-    options = { :q => domain, :client_id => client_id }
-    Hashie::Mash.new(get('/v1/info', { :query => options }))
+    options = {q: domain, client_id: client_id}
+    Hashie::Mash.new(get('/v1/info', query: options))
   end
-
 end
