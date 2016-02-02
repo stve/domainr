@@ -1,19 +1,15 @@
-#!/usr/bin/env rake
-
-require 'bundler/gem_tasks'
+require 'bundler'
+Bundler::GemHelper.install_tasks
 
 require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec) do |t|
-  t.ruby_opts = '-w'
-end
+RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
-task :test => :spec
+task test: :spec
+
+require 'rubocop/rake_task'
+RuboCop::RakeTask.new
 
 require 'yard'
-namespace :doc do
-  YARD::Rake::YardocTask.new do |task|
-    task.files   = ['LICENSE.md', 'lib/**/*.rb']
-    task.options = ['--markup', 'markdown']
-  end
-end
+YARD::Rake::YardocTask.new
+
+task default: [:spec, :rubocop]
