@@ -1,0 +1,16 @@
+{
+  "status": [
+    {
+      "domain": "acme.coffee",
+      "zone": "coffee",
+      "status": "undelegated inactive",
+      "summary": "inactive"
+    },
+    {
+      "domain": "acmecafe.com",
+      "zone": "com",
+      "status": "active parked",
+      "summary": "parked"
+    }
+  ]
+}

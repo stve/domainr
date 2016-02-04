@@ -18,6 +18,14 @@ def fixture(file)
   File.new(fixture_path + '/' + file)
 end
 
+def stub_get(path)
+  stub_request(:get, Domainr::Client::DEFAULT_ENDPOINT + path)
+end
+
+def a_get(path)
+  a_request(:get, Domainr::Client::DEFAULT_ENDPOINT + path)
+end
+
 RSpec.configure do |config|
   config.order = :random
   config.expect_with :rspec do |expectations|

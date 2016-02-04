@@ -1,1 +1,68 @@
-{"query": "domainr", "results": [{"domain": "domainr.com", "register_url": "http://domainr.com/domainr.com/register", "host": "", "path": "", "subdomain": "domainr.com", "availability": "maybe"}, {"domain": "domainr.net", "register_url": "http://domainr.com/domainr.net/register", "host": "", "path": "", "subdomain": "domainr.net", "availability": "maybe"}, {"domain": "domainr.org", "register_url": "http://domainr.com/domainr.org/register", "host": "", "path": "", "subdomain": "domainr.org", "availability": "maybe"}, {"domain": "domai.nr", "register_url": "http://domainr.com/domai.nr/register", "host": "", "path": "", "subdomain": "domai.nr", "availability": "taken"}, {"domain": "doma.in", "register_url": "http://domainr.com/doma.in/register", "host": "", "path": "/r", "subdomain": "doma.in", "availability": "maybe"}, {"domain": "dom.ai", "register_url": "http://domainr.com/dom.ai/register", "host": "", "path": "/nr", "subdomain": "dom.ai", "availability": "maybe"}, {"domain": "do.ma", "register_url": "http://domainr.com/do.ma/register", "host": "", "path": "/inr", "subdomain": "do.ma", "availability": "maybe"}, {"domain": "d.om", "register_url": "http://domainr.com/d.om/register", "host": "", "path": "/ainr", "subdomain": "d.om", "availability": "unavailable"}, {"domain": "dm.nr", "register_url": "http://domainr.com/dm.nr/register", "host": "", "path": "", "subdomain": "dm.nr", "availability": "maybe"}, {"domain": "d.mai.nr", "register_url": "http://domainr.com/d.mai.nr/register", "host": "d.", "path": "", "subdomain": "mai.nr", "availability": "available"}, {"domain": "d.mn", "register_url": "http://domainr.com/d.mn/register", "host": "", "path": "/r", "subdomain": "d.mn", "availability": "unavailable"}, {"domain": "d.ma.in", "register_url": "http://domainr.com/d.ma.in/register", "host": "d.", "path": "/r", "subdomain": "ma.in", "availability": "unavailable"}, {"domain": "d.m.ai", "register_url": "http://domainr.com/d.m.ai/register", "host": "d.", "path": "/nr", "subdomain": "m.ai", "availability": "taken"}, {"domain": "d.ma", "register_url": "http://domainr.com/d.ma/register", "host": "", "path": "/inr", "subdomain": "d.ma", "availability": "available"}, {"domain": "dm", "register_url": "http://domainr.com/dm/register", "host": "", "path": "/nr", "subdomain": "dm", "availability": "tld"}, {"domain": "do", "register_url": "http://domainr.com/do/register", "host": "", "path": "/mainr", "subdomain": "do", "availability": "tld"}]}
+{
+  "results": [
+    {
+      "domain": "acme.cafe",
+      "host": "",
+      "subdomain": "acme.",
+      "zone": "cafe",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acme.cafe&registrar=&source=api"
+    },
+    {
+      "domain": "acme.coffee",
+      "host": "",
+      "subdomain": "acme.",
+      "zone": "coffee",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acme.coffee&registrar=&source=api"
+    },
+    {
+      "domain": "acme.kitchen",
+      "host": "",
+      "subdomain": "acme.",
+      "zone": "kitchen",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acme.kitchen&registrar=&source=api"
+    },
+    {
+      "domain": "acme.restaurant",
+      "host": "",
+      "subdomain": "acme.",
+      "zone": "restaurant",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acme.restaurant&registrar=&source=api"
+    },
+    {
+      "domain": "acmecafe.us",
+      "host": "",
+      "subdomain": "acmecafe.",
+      "zone": "us",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acmecafe.us&registrar=&source=api"
+    },
+    {
+      "domain": "acmecafe.com",
+      "host": "",
+      "subdomain": "acmecafe.",
+      "zone": "com",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acmecafe.com&registrar=&source=api"
+    },
+    {
+      "domain": "acmecafe.net",
+      "host": "",
+      "subdomain": "acmecafe.",
+      "zone": "net",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acmecafe.net&registrar=&source=api"
+    },
+    {
+      "domain": "acmecafe.org",
+      "host": "",
+      "subdomain": "acmecafe.",
+      "zone": "org",
+      "path": "",
+      "registerURL": "https://api.domainr.com/v2/register?domain=acmecafe.org&registrar=&source=api"
+    }
+  ]
+}

@@ -6,6 +6,8 @@ require 'domainr/version'
 Gem::Specification.new do |spec|
   spec.add_dependency 'httparty', ">= 0.5.2"
   spec.add_dependency 'hashie', ">= 0.2.0"
+  spec.add_dependency 'http', '~> 1.0'
+  spec.add_dependency 'virtus', '~> 1.0'
   spec.add_development_dependency 'bundler', '~> 1.0'
   spec.author        = "Steve Agalloco"
   spec.description   = 'Ruby wrapper for the Domainr API'
