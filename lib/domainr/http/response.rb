@@ -31,12 +31,12 @@ module Domainr
       def fail_if_http_error
         return if response.status.ok?
 
-        fail Domainr::Error.new(response.status.reason, response.status.code)
+        raise Domainr::Error.new(response.status.reason, response.status.code)
       end
 
       def fail_if_body_contains_error
         if parsed.key?('error')
-          fail Domainr::Error.from_response(parsed['error'])
+          raise Domainr::Error.from_response(parsed['error'])
         end
       end
     end
