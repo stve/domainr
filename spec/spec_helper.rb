@@ -18,12 +18,12 @@ def fixture(file)
   File.new(fixture_path + '/' + file)
 end
 
-def stub_get(path)
-  stub_request(:get, Domainr::Client::DEFAULT_ENDPOINT + path)
+def stub_get(path, endpoint = Domainr::Client::DEFAULT_ENDPOINT)
+  stub_request(:get, endpoint + path)
 end
 
-def a_get(path)
-  a_request(:get, Domainr::Client::DEFAULT_ENDPOINT + path)
+def a_get(path, endpoint = Domainr::Client::DEFAULT_ENDPOINT)
+  a_request(:get, endpoint + path)
 end
 
 RSpec.configure do |config|

@@ -53,4 +53,26 @@ RSpec.describe Domainr::Client do
       expect(results.first).to be_a Domainr::Domain
     end
   end
+
+  context 'high volume use' do
+    let(:endpoint) { 'https://api.domainr.com' }
+    let(:client_id) { 'abcdefghijklmnopqrstuvwxyz' }
+    let(:client) { Domainr::Client.new(client_id: client_id, endpoint: endpoint) }
+
+    before do
+      stub_get('/v2/search', endpoint)
+        .with(query: {query: 'beforeitwasround', client_id: client_id})
+        .to_return(status: 200, body: fixture('search.json'), headers: {})
+    end
+
+    it 'overrides the default endpoint' do
+      expect(client.endpoint).to eq(endpoint)
+    end
+
+    it 'uses the client_id when making API requests' do
+      client.search('beforeitwasround')
+      expect(a_get('/v2/search', endpoint).with(query: {query: 'beforeitwasround', client_id: client_id}))
+        .to have_been_made
+    end
+  end
 end
