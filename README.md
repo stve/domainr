@@ -12,7 +12,7 @@ Instantiate a new client:
 
     client = Domainr::Client.new(mashape_key: 'abcdefghijklmnopqrstuvwxyz')
 
-If you are using Domainr's high volume API endpoints, you can pass the client_id and endpoint instead:
+If you are using Domainr's high volume API endpoints, you can pass a `client_id` and `endpoint` instead:
 
     client = Domainr::Client.new(client_id: '123456789', endpoint: 'https://api.domainr.com')
 
@@ -23,6 +23,11 @@ Once configured, you can use the `Domainr::Client` to retrieve information about
 You can also search Domainr based on a search term:
 
     client.search('twitter')
+
+## Documentation
+[http://rdoc.info/gems/domainr][documentation]
+
+[documentation]: http://rdoc.info/gems/domainr}}
 
 ## Contributing
 
